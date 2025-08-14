@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="emp1" class="com.entity.Employee">
+		<property name="emp_id" value="121"></property>
+		<property name="emp_name" value="ram"></property>
+		<property name="salary" value="14 LPA"></property>
+		<property name="country" ref="country"></property>
+	</bean>
+	<!-- <bean id="emp1" class="com.entity.Employee"> <constructor-arg index="0" 
+		value="123"></constructor-arg> <constructor-arg index="1" value="Samarth"></constructor-arg> 
+		<constructor-arg index="2" value="20 LPA"></constructor-arg> </bean> -->
+	<bean id="country" class="com.entity.Country">
+		<property name="cid" value="+91"></property>
+		<property name="country_name" value="India"></property>
+
+	</bean>
+
+	<!--<bean id="emp2" class="com.entity.Employee"> <constructor-arg index="0" 
+		value="124"></constructor-arg> <constructor-arg index="1" value="Ranjay"></constructor-arg> 
+		<constructor-arg index="2" value="21 LPA"></constructor-arg> </bean> <bean 
+		id="emp3" class="com.entity.Employee"> <constructor-arg index="0" value="125"></constructor-arg> 
+		<constructor-arg index="1" value="Nilesh"></constructor-arg> <constructor-arg 
+		index="2" value="23 LPA"></constructor-arg> </bean> bean definitions here -->
+
+
+
+</beans>
