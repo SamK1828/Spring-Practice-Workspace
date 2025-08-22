@@ -27,3 +27,5 @@
 .settings/
 .metadata
 .vscode
+*.MF
+*.properties
