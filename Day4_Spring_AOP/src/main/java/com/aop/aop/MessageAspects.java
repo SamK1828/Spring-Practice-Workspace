@@ -15,7 +15,7 @@ public class MessageAspects {
 //		System.out.println("Message Before Recharge: Package Expiring Soon !!!!!");
 //	}
 //
-	@After("execution(public void myRecharge())")
+	@After("* execution(* com.aop.entity.Recharge.*(..))")
 	public void afterRecharge() {
 		System.out.println("Message After Recharge: Recharge Successfull !!!!!");
 	}

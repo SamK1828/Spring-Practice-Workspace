@@ -28,9 +28,6 @@ public class Employee {
 	public void setSalary(String salary) {
 		this.salary = salary;
 	}
-
-	
-
 	public Employee() {
 		super();
 		// TODO Auto-generated constructor stub
